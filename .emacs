@@ -1,6 +1,7 @@
 (defconst +home-dir+ "/home/azer")
 (defconst +org-files+ (list
-		       (format "%s/ada/doc/org/gtd.org" +home-dir+)))
+		        (format "%s/ada/doc/org/gtd.org" +home-dir+)
+		       ))
 
 ;; basic customization
 (add-to-list 'load-path "~/.emacs.d/")
@@ -62,9 +63,7 @@
 (setq org-agenda-files +org-files+)
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
-(defconst +home-dir+ "/home/azer")
-(defconst +org-files+ (list
-		       (format "%s/ada/doc/org/gtd.org" +home-dir+)))
+(setq org-log-done 'time)
 
 ;; general customization
 (setq make-backup-files nil) 
@@ -253,7 +252,7 @@
 ;; set color 
 (require 'color-theme)
 (color-theme-initialize)
-(color-theme-clarity)
+(color-theme-azer)
 
 ;; erc memory leak solution
 (setq erc-truncate-buffer-on-save t)
