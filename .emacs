@@ -3,7 +3,7 @@
 		        (format "%s/ada/doc/org/gtd.org" +home-dir+)))
 
 ;; basic customization
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/emacsfiles/")
 (setq make-backup-files nil) 
 (setq auto-save-default nil)
 ;;(global-set-key [up] nil)
