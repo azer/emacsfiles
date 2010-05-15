@@ -9,6 +9,11 @@
 ;;(global-set-key [up] nil)
 ;;(global-set-key [down] nil)
 (setq x-select-enable-clipboard t)
+;; indentation
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 2)
+(setq indent-line-function 'insert-tab)
+(setq js-indent-level 2)
 
 ;; line numbers
 (require 'lineno)
