@@ -3,35 +3,42 @@
 		        (format "%s/ada/doc/org/gtd.org" +home-dir+)))
 
 ;; basic customization
-(add-to-list 'load-path "~/emacsfiles/")
+(add-to-list 'load-path "~/.config/emacsfiles/")
 (setq make-backup-files nil) 
 (setq auto-save-default nil)
+(setq confirm-kill-emacs nil)
 ;;(global-set-key [up] nil)
 ;;(global-set-key [down] nil)
 (setq x-select-enable-clipboard t)
+(setq split-width-threshold nil)
+
 ;; indentation
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
 (setq indent-line-function 'insert-tab)
 (setq js-indent-level 2)
 
+;; ido mode
+(require 'ido)
+(ido-mode t)
+
 ;; line numbers
 (require 'lineno)
+(global-set-key (kbd "C-x l") 'lineno-minor-mode)
+
+;; git
+(require 'magit)
+
+;; hide bars
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+(scroll-bar-mode -1)
 
 ;; setup slime extension
 (setq inferior-lisp-program "/usr/bin/clisp")
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/slime/")
 (require 'slime)
 (slime-setup)
-
-
-;; set keybindings
-(global-set-key (kbd "C-x l") 'lineno-minor-mode)
-
-;; hide bars
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(scroll-bar-mode -1)
 
 ;; configure org
 (defun gtd()
@@ -116,10 +123,10 @@
 (set-face-attribute 'default nil :height 100)
 
 ;; setup slime extension
-(setq inferior-lisp-program "/usr/bin/clisp")
-(add-to-list 'load-path "/usr/share/emacs/site-lisp/slime/")
-(require 'slime)
-(slime-setup)
+;(setq inferior-lisp-program "/usr/bin/clisp")
+;(add-to-list 'load-path "/usr/share/emacs/site-lisp/slime/")
+;(require 'slime)
+;(slime-setup)
 
 ;; set color theme
 (require 'color-theme)
@@ -133,16 +140,49 @@
 (defvar erc-insert-post-hook)
 (add-hook 'erc-insert-post-hook
 	  'erc-truncate-buffer)
+
+;; customized variables
 (custom-set-variables
   ;; custom-set-variables was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(js-auto-indent-flag nil)
- '(js-flat-functions nil))
+ '(js-flat-functions nil)
+ '(org-agenda-files nil))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  )
+
+;; wanderlust
+(add-to-list 'load-path "~/.config/wl/")
+(require 'wlconfig)
+
+;; package.el
+(when
+    (load
+     (expand-file-name "~/opt/elpa/package.el"))
+  (package-initialize))
+
+;; clojure-mode
+(add-to-list 'load-path "~/opt/clojure-mode")
+(require 'clojure-mode)
+
+;; swank-clojure
+(add-to-list 'load-path "~/opt/swank-clojure")
+;;(require 'swank-clojure-autoload)
+;;(swank-clojure-config
+;;(setq swank-clojure-jar-path "~/.clojure/clojure.jar")
+;;(setq swank-clojure-extra-classpaths
+;;(list "~/.clojure/clojure-contrib.jar")))
+;; slime
+(eval-after-load "slime"
+'(progn (slime-setup '(slime-repl))))
+
+;;(add-to-list 'load-path "~/opt/slime")
+;;(require 'slime)
+;;(slime-setup)
+
