@@ -116,7 +116,7 @@
 ;; init yasnippet
 (require 'yasnippet) ;; not yasnippet-bundle
 (yas/initialize)
-(yas/load-directory "~/emacsfiles/snippets")
+(yas/load-directory "~/.config/emacsfiles/snippets")
 
 ;; visual customization
 (set-default-font "Inconsolata:pixelsize=16:foundry=unknown:weight=normal:slant=normal:width=normal:spacing=100:scalable=true")
@@ -158,8 +158,8 @@
  )
 
 ;; wanderlust
-(add-to-list 'load-path "~/.config/wl/")
-(require 'wlconfig)
+;; (add-to-list 'load-path "~/.config/wl/")
+;; (require 'wlconfig)
 
 ;; package.el
 (when
