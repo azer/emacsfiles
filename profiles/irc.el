@@ -28,3 +28,8 @@
 (add-hook 'erc-insert-post-hook
 	  'erc-truncate-buffer)
 (setq erc-max-buffer-size 20000)
+
+;; twitteringmode
+(add-to-list 'load-path "~/.config/emacsfiles/twittering-mode")
+(require 'twittering-mode)
+(setq twittering-use-master-password t)
