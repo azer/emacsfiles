@@ -1,3 +1,6 @@
 [submodule "twittering-mode"]
 	path = twittering-mode
 	url = https://github.com/hayamiz/twittering-mode
+[submodule "solarized"]
+	path = solarized
+	url = https://github.com/sellout/emacs-color-theme-solarized.git

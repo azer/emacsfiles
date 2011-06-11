@@ -33,3 +33,8 @@
 (add-to-list 'load-path "~/.config/emacsfiles/twittering-mode")
 (require 'twittering-mode)
 (setq twittering-use-master-password t)
+
+(require 'color-theme)
+(color-theme-initialize)
+(require 'color-theme-azer)
+(color-theme-azer)
