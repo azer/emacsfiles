@@ -43,11 +43,10 @@
 (yas/load-directory "~/.config/emacsfiles/snippets")
 
 ;; clojure-mode
-(add-to-list 'load-path "~/opt/clojure-mode")
+(add-to-list 'load-path "~/.config/emacsfiles/clojure-mode")
 (require 'clojure-mode)
 
 ;; paredit
-(add-to-list 'load-path "~/opt/paredit")
 (require 'paredit)
 
 ;; slime
@@ -58,8 +57,10 @@
   (add-hook 'slime-repl-mode-hook 'paredit-mode-enable)
   (setq slime-protocol-version 'ignore)))
 
-(add-to-list 'load-path "~/opt/slime")
+(add-to-list 'load-path "~/.config/emacsfiles/slime")
 (require 'slime)
 (slime-setup)
 
-
+;; js2mode
+(autoload 'js2-mode "js2-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
