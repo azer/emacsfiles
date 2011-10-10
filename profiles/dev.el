@@ -62,6 +62,11 @@
 (require 'slime)
 (slime-setup)
 
+;; android-mode
+(add-to-list 'load-path "~/opt/android-mode")
+(require 'android-mode)
+(setq android-mode-sdk-dir "~/opt/android")
+
 ;; js2mode
 (autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
