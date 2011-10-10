@@ -1,6 +1,7 @@
 (defconst +home-dir+ "/home/azer")
 
 (add-to-list 'load-path "~/.config/emacsfiles/")
+(show-paren-mode 1)
 
 ;; basic customizations
 (defalias 'yes-or-no-p 'y-or-n-p)
