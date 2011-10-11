@@ -6,6 +6,7 @@ install
 ```bash
 $ git clone git@github.com:azer/emacsfiles.git
 $ cd emacsfiles
+$ make
 $ make install
 ```
 
