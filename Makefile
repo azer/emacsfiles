@@ -16,6 +16,10 @@ install:
 	@mv -f ~/.emacs* bak/.;
 	@mv -f ~/.config/emacsfiles bak/.;
 	@echo "Old configuration moved into ./bak/"
+        @echo "Locate your snippets in ~/.local/share/snippets"
 	@mkdir -p ~/.local/share/snippets;
-	@echo "Locate snippets in ~/.local/share/snippets"
-	@ln -s init.el ~/
+	@ln -s init.el ~/.emacs
+	@echo "Copy * into ~/.config/emacsfiles/"
+	@mkdir -p ~/.config/emacsfiles
+	@cp -rf * ~/.config/emacsfiles/.
+	@echo "Done."
