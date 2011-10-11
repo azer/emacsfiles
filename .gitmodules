@@ -7,9 +7,6 @@
 [submodule "slime"]
 	path = lib/slime
 	url = git://github.com/nablaone/slime.git
-[submodule "clojure-mode"]
-	path = lib/clojure-mode
-	url = git://github.com/technomancy/clojure-mode.git
 [submodule "android-mode"]
 	path = lib/android-mode
 	url = git://github.com/remvee/android-mode.git
