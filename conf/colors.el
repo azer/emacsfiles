@@ -5,13 +5,13 @@
   (interactive)
   (color-theme-install
    '(theme-1
-     ((background-color . "#050005")
+     (;;(background-color . "#050005")
       (foreground-color . "#FFFFFF")
       (background-mode . dark)
       (border-color . "#323232")
       (cursor-color . "#FFFFFF")
       (mouse-color . "#323232"))
-     (mode-line ((t (:foreground "#FFFFFF" :background "#323232"))))
+     (mode-line ((t (:foreground "#ddd" :background "#111"))))
      (region ((t (:background "#323232"))))
 
      (font-lock-comment-face ((t (:foreground "#766655"))))
