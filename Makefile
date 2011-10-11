@@ -1,4 +1,6 @@
 all:
+	@echo "Pulling submodules..."
+	@git submodule foreach git pull
 	@echo "Building...";
 	@cd lib/auto-complete/dict; \
 	@ln -s javascript-mode js2-mode;
