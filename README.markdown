@@ -18,7 +18,7 @@ usage examples;
 
 ```bash
 $ emacs # load only default profile
-$ emacs dev # what is needed for the dev environment
+$ emacs dev # load what is needed for the dev environment
 $ emacs irc # erc and twittering-mode
 $ emacs org # org-mode configurations
 $ emacs android # load android emulator in addition to dev profile
