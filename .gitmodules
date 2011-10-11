@@ -25,3 +25,6 @@
 [submodule "lib/undo-tree"]
 	path = lib/undo-tree
 	url = http://www.dr-qubit.org/git/undo-tree.git
+[submodule "lib/clojure-mode"]
+	path = lib/clojure-mode
+	url = https://github.com/technomancy/clojure-mode.git
