@@ -1,5 +1,6 @@
 all:
 	@echo "Pulling submodules..."
+	@git pull && git submodule init && git submodule update && git submodule status
 	@git submodule foreach git pull
 	@echo "Building...";
 	@cd lib/auto-complete/dict; \
