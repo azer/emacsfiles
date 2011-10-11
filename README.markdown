@@ -2,7 +2,7 @@ this is the repository of the configuration of my emacs.
 
 profiles
 ========
-this configuration comes with a profile mechanism that lets user splitting and loading the configurations of particular uses.
+this configuration comes with a profile mechanism that lets user split and load the configurations of particular uses.
 As seen in the source code tree, profiles/ directory contains 4 different modules; default.el, dev.el, irc.el, org.el, android.el. To specify one, pass emacs name of the file simply;
 
 ```bash
