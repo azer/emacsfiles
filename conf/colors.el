@@ -1,7 +1,10 @@
-(defun set-colors ()
+(require 'color-theme)
+(color-theme-initialize)
+
+(defun theme-1 ()
   (interactive)
   (color-theme-install
-   '(set-colors
+   '(theme-1
      ((background-color . "#050005")
       (foreground-color . "#FFFFFF")
       (background-mode . dark)
@@ -22,4 +25,4 @@
      (font-lock-type-face ((t (:foreground "#C1E400"))))
      )))
 
-(provide 'set-colors)
+(theme-1)

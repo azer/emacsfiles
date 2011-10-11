@@ -13,3 +13,18 @@
 [submodule "android-mode"]
 	path = lib/android-mode
 	url = git://github.com/remvee/android-mode.git
+[submodule "lib/auto-complete"]
+	path = lib/auto-complete
+	url = http://cx4a.org/repo/auto-complete.git
+[submodule "lib/align-cljlet"]
+	path = lib/align-cljlet
+	url = https://github.com/gstamp/align-cljlet.git
+[submodule "lib/durendal"]
+	path = lib/durendal
+	url = https://github.com/technomancy/durendal.git
+[submodule "lib/smex"]
+	path = lib/smex
+	url = https://github.com/nonsequitur/smex.git
+[submodule "lib/undo-tree"]
+	path = lib/undo-tree
+	url = http://www.dr-qubit.org/git/undo-tree.git

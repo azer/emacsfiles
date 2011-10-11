@@ -1,34 +1,14 @@
-(load-file "~/.config/emacsfiles/profiles/default.el")
-(show-paren-mode 1)
+(load-conf-file "slime.el")
 
-;;;; yasnippet
 (require 'yasnippet)
-(yas/initialize)
-(yas/load-directory "~/.local/share/snippets")
 
-;; clojure-mode
-(add-to-list 'load-path (format "%s/clojure-mode" +config-lib-dir+))
-(require 'clojure-mode)
+(load-conf-file "auto-complete.el")
+(load-conf-file "clojure.el")
+(load-conf-file "highlight-flash.el")
+(load-conf-file "js2.el")
+(load-conf-file "lisp.el")
+(load-conf-file "smex.el")
+(load-conf-file "paredit.el")
+(load-conf-file "yasnippet.el")
 
-;; paredit
-(require 'paredit)
-
-;; slime
-(eval-after-load "slime"
-  '(progn (slime-setup '(slime-repl))
-  (defun paredit-mode-enable () (paredit-mode 1))
-  (defun clojure-mode-enable () (clojure-mode 1))
-  (add-hook 'slime-repl-mode-hook 'paredit-mode-enable)
-  (add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
-  (setq slime-protocol-version 'ignore)
-  (setq slime-lisp-implementations
-    `((clojure ("clj-cmd") :init swank-clojure-init)
-     ,@slime-lisp-implementations))))
-
-(add-to-list 'load-path (format "%s/slime" +config-lib-dir+))
-(require 'slime)
-(slime-setup)
-
-;; js2mode
-(autoload 'js2-mode "js2-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(load-conf-file "durendal.el")

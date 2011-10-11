@@ -1,6 +1,5 @@
-(load-file "~/.config/emacsfiles/profiles/dev.el")
+(load-profile "dev")
+(add-lib-path "android-mode")
 
-;; android-mode
-(add-to-list 'load-path "~/opt/android-mode")
 (require 'android-mode)
-(setq android-mode-sdk-dir "~/opt/android")
+(load-conf-file "android.el")
