@@ -6,4 +6,5 @@
 (load-conf-file "colors.el")
 (load-conf-file "bindings.el")
 (load-conf-file "ido.el")
+(load-conf-file "markdown.el")
 (load-conf-file "undo-tree.el")

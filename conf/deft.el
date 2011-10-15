@@ -1,0 +1,6 @@
+(add-lib-path "deft")
+(require 'deft)
+(setq deft-extension "txt")
+(setq deft-directory "~/docs/notes")
+(setq deft-text-mode 'markdown-mode)
+(global-set-key [f8] 'deft)

@@ -28,3 +28,9 @@
 [submodule "lib/clojure-mode"]
 	path = lib/clojure-mode
 	url = https://github.com/technomancy/clojure-mode.git
+[submodule "lib/deft"]
+	path = lib/deft
+	url = git://jblevins.org/git/deft.git
+[submodule "lib/markdown-mode"]
+	path = lib/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git
