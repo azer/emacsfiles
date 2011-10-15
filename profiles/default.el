@@ -2,6 +2,7 @@
 (require 'smooth-scrolling)
 
 (load-conf-file "core.el")
+(load-conf-file "indent.el")
 (load-conf-file "ui.el")
 (load-conf-file "colors.el")
 (load-conf-file "bindings.el")

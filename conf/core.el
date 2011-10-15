@@ -27,7 +27,6 @@
 (prefer-coding-system 'utf-8)
 (ansi-color-for-comint-mode-on)
 
-(set-default 'indent-tabs-mode nil)
 (auto-compression-mode t)
 
 (random t) ;; Seed the random-number generator
