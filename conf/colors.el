@@ -65,6 +65,7 @@ by John Gruber."
      (isearch-fail ((t (:foreground "#000" :background "#f43841"))))
 
      ;; User interface
+     (linum ((t (:background "#181818" :foreground "#777"))))
      (fringe ((t (:background "#111" :foreground "#444"))))
      (border ((t (:background "#111" :foreground "#444"))))
      (mode-line ((t (:background "#453d41" :foreground "#fff"))))
