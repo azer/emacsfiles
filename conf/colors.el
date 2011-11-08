@@ -35,7 +35,7 @@ by John Gruber."
   (color-theme-install
    '(color-theme-gruber-darker
      ((foreground-color . "#e4e4ef")
-      (background-color . "#181818")
+      ;;(background-color . "#181818")
       (background-mode . dark)
       (cursor-color . "#ffdd33")
       (mouse-color . "#ffdd33"))
