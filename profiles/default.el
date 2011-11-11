@@ -9,3 +9,4 @@
 (load-conf-file "ido.el")
 (load-conf-file "markdown.el")
 (load-conf-file "undo-tree.el")
+(load-conf-file "term.el")
