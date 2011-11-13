@@ -35,7 +35,7 @@ by John Gruber."
   (color-theme-install
    '(color-theme-gruber-darker
      ((foreground-color . "#e4e4ef")
-      (background-color . "#181818")
+      ;;(background-color . "#181818")
       (background-mode . dark)
       (cursor-color . "#ffdd33")
       (mouse-color . "#ffdd33"))
@@ -65,7 +65,7 @@ by John Gruber."
      (isearch-fail ((t (:foreground "#000" :background "#f43841"))))
 
      ;; User interface
-     (linum ((t (:background "#181818" :foreground "#777"))))
+     (linum ((t (:foreground "#777"))))
      (fringe ((t (:background "#111" :foreground "#444"))))
      (border ((t (:background "#111" :foreground "#444"))))
      (mode-line ((t (:background "#453d41" :foreground "#fff"))))
