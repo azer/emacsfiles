@@ -1,5 +1,10 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
+(defun align= (begin end)
+  "Align region to equal signs"
+  (interactive "r")
+  (align-regexp begin end "\\(\\s-*\\)=" 1 1))
+
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 (setq confirm-kill-emacs nil)
@@ -7,6 +12,8 @@
 (global-set-key "\C-w" 'backward-kill-word)
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)
+
+(global-set-key (kbd "\C-x\\") 'align=)
 
 (setq visible-bell t
       column-number-mode t
