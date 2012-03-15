@@ -6,6 +6,8 @@
   (align-regexp begin end "\\(\\s-*\\)=" 1 1))
 
 (setq make-backup-files nil)
+(setq backup-inhibited t)
+(setq auto-save-default nil)
 (setq auto-save-default nil)
 (setq confirm-kill-emacs nil)
 
