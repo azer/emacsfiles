@@ -10,4 +10,3 @@
 
 ;;set cursor colour
 (set-cursor-color "yellow")
-
