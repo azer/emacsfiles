@@ -11,6 +11,9 @@ all:
 	mv js2-mode.elc ../.;
 	echo "build successful."
 
+submodule:
+	git submodule add ${repo} lib/${name}
+
 install:
 	@mkdir lib/themes
 	@echo "Locate your snippets in ~/.local/share/snippets"
