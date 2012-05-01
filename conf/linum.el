@@ -1,3 +1,2 @@
-(setq linum-format " %d ")
-
+(setq linum-format "  %d  ")
 ;;(global-linum-mode 1)
