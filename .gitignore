@@ -1,3 +1,5 @@
 ./tmp/*
 tmpac-comphist.dat
 lib/js2-mode.elc
+lib/slime
+lib/rust-mode

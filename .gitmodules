@@ -37,3 +37,6 @@
 [submodule "lib/rust-mode"]
 	path = lib/rust-mode
 	url = https://github.com/marijnh/rust-mode.git
+[submodule "lib/ecb"]
+	path = lib/ecb
+	url = https://github.com/emacsmirror/ecb.git
