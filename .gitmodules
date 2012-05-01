@@ -40,3 +40,6 @@
 [submodule "lib/ecb"]
 	path = lib/ecb
 	url = https://github.com/emacsmirror/ecb.git
+[submodule "lib/coffee-mode"]
+	path = lib/coffee-mode
+	url = git://github.com/defunkt/coffee-mode.git

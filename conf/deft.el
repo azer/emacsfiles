@@ -1,6 +1,12 @@
 (add-lib-path "deft")
 (require 'deft)
-(setq deft-extension "txt")
-(setq deft-directory "~/docs/notes")
+(setq deft-extension "md")
+(setq deft-directory "~/projects/docs.kodfabrik.com")
 (setq deft-text-mode 'markdown-mode)
-(global-set-key [f8] 'deft)
+
+(defun deft-start-and-refresh ()
+  (interactive)
+  (deft)
+  (deft-refresh))
+
+(global-set-key [f8] 'deft-start-and-refresh)
