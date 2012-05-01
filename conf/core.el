@@ -11,6 +11,8 @@
 (setq auto-save-default nil)
 (setq confirm-kill-emacs nil)
 
+(setq-default truncate-lines nil)
+
 (global-set-key "\C-w" 'backward-kill-word)
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)
