@@ -8,7 +8,6 @@
 (setq make-backup-files nil)
 (setq backup-inhibited t)
 (setq auto-save-default nil)
-(setq auto-save-default nil)
 (setq confirm-kill-emacs nil)
 
 (setq-default truncate-lines nil)
@@ -56,6 +55,7 @@
 ;;remove all trailing whitespace and trailing blank lines before saving the file
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (add-hook 'before-save-hook 'delete-trailing-blank-lines)
+(setq-default show-trailing-whitespace t)
 
 (defun delete-trailing-blank-lines ()
   "Deletes all blank lines at the end of the file."

@@ -12,7 +12,7 @@
 (load-conf-file "paredit.el")
 (load-conf-file "yasnippet.el")
 (load-conf-file "rust.el")
-(load-conf-file "ecb.el")
-(load-conf-file "coffee-script.el")
+;;(load-conf-file "ecb.el")
+;;(load-conf-file "coffee-script.el")
 
 (load-conf-file "durendal.el")
