@@ -17,3 +17,5 @@
 ;;(load-conf-file "coffee-script.el")
 
 (load-conf-file "durendal.el")
+
+(load-conf-file "idomenu.el")
