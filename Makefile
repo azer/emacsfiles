@@ -11,6 +11,9 @@ all:
 	mv js2-mode.elc ../.;
 	echo "build successful."
 
+update:
+	git submodule foreach "(git checkout master; git pull)&"
+
 submodule:
 	git submodule add ${repo} lib/${name}
 
