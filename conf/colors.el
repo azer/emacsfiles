@@ -1,31 +1,33 @@
 (require 'color-theme)
 (color-theme-initialize)
 
-(defun theme-1 ()
-  (interactive)
-  (color-theme-install
-   '(theme-1
-     (;;(background-color . "#050005")
-      (foreground-color . "#FFFFFF")
-      (background-mode . dark)
-      (border-color . "#323232")
-      (cursor-color . "#FFFFFF")
-      (mouse-color . "#323232"))
-     (mode-line ((t (:foreground "#ddd" :background "#111"))))
-     (region ((t (:background "#323232"))))
+;; color-theme-gruber-dark.el
+;; Revision 1
+;;
+;; Copyright (C) 2009-2010 Jason R. Blevins
+;;
+;; Permission is hereby granted, free of charge, to any person
+;; obtaining a copy of this software and associated documentation
+;; files (the "Software"), to deal in the Software without
+;; restriction, including without limitation the rights to use,
+;; copy, modify, merge, publish, distribute, sublicense, and/or sell
+;; copies of the Software, and to permit persons to whom the
+;; Software is furnished to do so, subject to the following
+;; conditions:
+;;
+;; The above copyright notice and this permission notice shall be
+;; included in all copies or substantial portions of the Software.
+;;
+;; THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+;; EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+;; OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+;; NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+;; HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+;; WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+;; FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+;; OTHER DEALINGS IN THE SOFTWARE.
 
-     (font-lock-comment-face ((t (:foreground "#766655"))))
-     (font-lock-constant-face ((t (:foreground "#A4E800"))))
-     (font-lock-builtin-face ((t (:foreground "#653D96"))))
-     (font-lock-function-name-face ((t (:foreground "#FF8424"))))
-     (font-lock-variable-name-face ((t (:foreground "#C35362"))))
-     (font-lock-keyword-face ((t (:foreground "#B63924"))))
-     (font-lock-string-face ((t (:foreground "#CCD8E8"))))
-     (font-lock-doc-string-face ((t (:foreground "#CCD8E8"))))
-     (font-lock-type-face ((t (:foreground "#C1E400"))))
-     )))
-
-;;(theme-1)
+(require 'color-theme)
 
 (defun color-theme-gruber-darker ()
   "Gruber Darker color theme for Emacs by Jason Blevins.
@@ -35,7 +37,7 @@ by John Gruber."
   (color-theme-install
    '(color-theme-gruber-darker
      ((foreground-color . "#e4e4ef")
-      ;;(background-color . "#181818")
+      (background-color . "#000000")
       (background-mode . dark)
       (cursor-color . "#ffdd33")
       (mouse-color . "#ffdd33"))
@@ -49,7 +51,8 @@ by John Gruber."
      (font-lock-string-face ((t (:foreground "#73c936"))))
      (font-lock-keyword-face ((t (:foreground "#ffdd33"))))
      (font-lock-builtin-face ((t (:foreground "#ffdd33"))))
-     (font-lock-function-name-face ((t (:foreground "#96a6c8"))))
+     ;;(font-lock-function-name-face ((t (:foreground "#96a6c8" :weight bold))))
+     (font-lock-function-name-face ((t (:foreground "#ff6644" :weight normal))))
      (font-lock-variable-name-face ((t (:foreground "#f4f4ff"))))
      (font-lock-preprocessor-face ((t (:foreground "#95a99f"))))
      (font-lock-constant-face ((t (:foreground "#95a99f"))))
@@ -65,12 +68,11 @@ by John Gruber."
      (isearch-fail ((t (:foreground "#000" :background "#f43841"))))
 
      ;; User interface
-     (linum ((t (:foreground "#777"))))
      (fringe ((t (:background "#111" :foreground "#444"))))
      (border ((t (:background "#111" :foreground "#444"))))
-     (mode-line ((t (:background "#333" :foreground "#ccc"))))
-     (mode-line-buffer-id ((t (:background nil :foreground nil))))
-     (mode-line-inactive ((t (:background "#111" :foreground "#999"))))
+     (mode-line ((t (:background "#453d41" :foreground "#fff"))))
+     (mode-line-buffer-id ((t (:background "#453d41" :foreground "#fff"))))
+     (mode-line-inactive ((t (:background "#453d41" :foreground "#999"))))
      (minibuffer-prompt ((t (:foreground "#96A6C8"))))
      (region ((t (:background "#484848"))))
      (secondary-selection ((t (:background "#484951" :foreground "#F4F4FF"))))
@@ -99,5 +101,7 @@ by John Gruber."
      (font-latex-warning-face ((t (:foreground "#f43841"))))
      (font-latex-slide-title-face ((t (:foreground "#96a6c8"))))
      )))
+
+(provide 'color-theme-gruber-darker)
 
 (color-theme-gruber-darker)

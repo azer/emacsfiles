@@ -1,7 +1,8 @@
 (defconst +home-dir+ "~")
-(defconst +emacs-dir+ (concat +home-dir+ "/.config/emacsfiles"))
+(defconst +emacs-dir+ (concat +home-dir+ "/emacsfiles"))
 (defconst +emacs-profiles-dir+ (concat +emacs-dir+ "/profiles"))
 (defconst +emacs-lib-dir+ (concat +emacs-dir+ "/lib"))
+(defconst +emacs-themes-dir+ (concat +emacs-dir+ "/themes"))
 (defconst +emacs-conf-dir+ (concat +emacs-dir+ "/conf"))
 (defconst +emacs-tmp-dir+ (concat +emacs-dir+ "/tmp"))
 
@@ -30,4 +31,3 @@
 (add-to-list 'command-switch-alist '("irc" . (lambda (n) (load-profile "irc"))))
 (add-to-list 'command-switch-alist '("org" . (lambda (n) (load-profile "org"))))
 (add-to-list 'command-switch-alist '("android" . (lambda (n) (load-profile "android"))))
-

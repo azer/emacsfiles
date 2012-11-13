@@ -3,7 +3,7 @@
 (defun align= (begin end)
   "Align region to equal signs"
   (interactive "r")
-  (align-regexp begin end "\\(\\s-*\\)=" 1 1))
+  (align-regexp begin end "\\(\\s-*\\)[=|:]" 1 1))
 
 (setq make-backup-files nil)
 (setq backup-inhibited t)
