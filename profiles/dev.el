@@ -18,4 +18,4 @@
 
 (load-conf-file "durendal.el")
 
-(load-conf-file "idomenu.el")
+(load-conf-file "git.el")

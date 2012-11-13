@@ -11,6 +11,9 @@ all:
 	mv js2-mode.elc ../.;
 	echo "build successful."
 
+init:
+	git submodule init && git submodule update && git submodule status
+
 update:
 	git submodule foreach "(git checkout master; git pull)&"
 
