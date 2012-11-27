@@ -1,6 +1,6 @@
 (load-conf-file "slime.el")
 
-;;(load-conf-file "ezbl.el")
+(load-conf-file "align.el")
 
 (load-conf-file "js2.el")
 (load-conf-file "auto-complete.el")
@@ -19,3 +19,5 @@
 (load-conf-file "durendal.el")
 
 (load-conf-file "git.el")
+
+(load-conf-file "idomenu.el")
