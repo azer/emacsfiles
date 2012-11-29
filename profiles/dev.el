@@ -1,6 +1,8 @@
 (load-conf-file "slime.el")
 
 (load-conf-file "align.el")
+(load-conf-file "make.el")
+(load-conf-file "colorize-compilation.el")
 
 (load-conf-file "js2.el")
 (load-conf-file "auto-complete.el")

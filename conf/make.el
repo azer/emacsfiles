@@ -13,7 +13,7 @@
   (interactive "sEnter parameters for make:")
   (message "Default make command set to 'make %s'" params)
   (setq make-params params)
-)
+  )
 
 (global-set-key (kbd "M-m") 'run-make-command)
 (global-set-key (kbd "M-n") 'set-make-params)

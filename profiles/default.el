@@ -12,4 +12,3 @@
 (load-conf-file "undo-tree.el")
 (load-conf-file "term.el")
 (load-conf-file "transparency.el")
-(load-conf-file "make.el")
