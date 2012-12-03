@@ -24,3 +24,18 @@ $ emacs irc # erc and twittering-mode
 $ emacs org # org-mode configurations
 $ emacs android # load android emulator in addition to dev profile
 ```
+
+keybindings
+===========
+
+* m-g s **magit-status**
+* m-g l **magit-log**
+* m-g f **magit-pull**
+* m-g p **magit-push**
+* m-z **zsh**
+* m-m **run-make-command**
+* m-n **set-make-params**
+* m-c **compile**
+* m-r **replace-regexp**
+* m-g g **go to line**
+* C-x \ **align=**
