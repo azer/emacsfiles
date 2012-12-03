@@ -1,8 +1,8 @@
 this is the repository of my emacs configuration. 
 
 
-install
-=======
+# install
+
 ```bash
 $ git clone git@github.com:azer/emacsfiles.git
 $ cd emacsfiles
@@ -10,8 +10,8 @@ $ make
 $ make install
 ```
 
-intro
-=====
+# intro
+
 this configuration comes with a profile mechanism that lets user split and load the configurations of particular uses.
 As seen in the source code tree, profiles/ directory contains 4 different modules; default.el, dev.el, irc.el, org.el, android.el. To specify one, pass emacs name of the file simply;
 
@@ -25,8 +25,7 @@ $ emacs org # org-mode configurations
 $ emacs android # load android emulator in addition to dev profile
 ```
 
-keybindings
-===========
+# custom keybindings
 
 * m-g s **magit-status**
 * m-g l **magit-log**
