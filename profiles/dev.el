@@ -23,3 +23,6 @@
 (load-conf-file "git.el")
 
 (load-conf-file "idomenu.el")
+(load-conf-file "jade-mode.el")
+(load-conf-file "node.el")
+;;(load-conf-file "flymake.el")

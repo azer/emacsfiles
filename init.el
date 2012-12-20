@@ -26,8 +26,9 @@
 (add-load-path "lib")
 
 (load-profile "default")
+(load-profile "dev")
 
-(add-to-list 'command-switch-alist '("dev" . (lambda (n) (load-profile "dev"))))
+;;(add-to-list 'command-switch-alist '("dev" . (lambda (n) (load-profile "dev"))))
 (add-to-list 'command-switch-alist '("irc" . (lambda (n) (load-profile "irc"))))
 (add-to-list 'command-switch-alist '("org" . (lambda (n) (load-profile "org"))))
 (add-to-list 'command-switch-alist '("android" . (lambda (n) (load-profile "android"))))

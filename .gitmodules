@@ -40,6 +40,15 @@
 [submodule "lib/yasnippet"]
 	path = lib/yasnippet
 	url = https://github.com/capitaomorte/yasnippet.git
+[submodule "lib/jade-mode"]
+	path = lib/jade-mode
+	url = https://github.com/brianc/jade-mode.git
 [submodule "lib/coffee-mode"]
 	path = lib/coffee-mode
-	url = https://github.com/handlename/coffee-mode.git
+	url = https://github.com/defunkt/coffee-mode.git
+[submodule "lib/textmate"]
+	path = lib/textmate
+	url = git://github.com/defunkt/textmate.el.git
+[submodule "lib/lintnode"]
+	path = lib/lintnode
+	url = https://github.com/davidmiller/lintnode.git
