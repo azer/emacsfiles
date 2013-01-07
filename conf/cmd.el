@@ -10,7 +10,7 @@
   "Set the command to run"
   (interactive)
   (setq cmd (read-from-minibuffer "Set the command to run: " cmd))
-  (run-new-command))
+  (run-last-command))
 
 (global-set-key (kbd "M-g c") 'run-new-command)
 (global-set-key (kbd "M-c") 'run-last-command)

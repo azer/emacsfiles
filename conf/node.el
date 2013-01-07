@@ -9,3 +9,5 @@
                      (lambda (output)
                        (replace-regexp-in-string ".*1G\.\.\..*5G" "..."
                                                  (replace-regexp-in-string ".*1G.*3G" " > " output))))))
+
+(define-key my-keys-map (kbd "M-g n") 'run-js)

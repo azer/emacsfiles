@@ -52,3 +52,6 @@
 [submodule "lib/lintnode"]
 	path = lib/lintnode
 	url = https://github.com/davidmiller/lintnode.git
+[submodule "lib/js3-mode"]
+	path = lib/js3-mode
+	url = https://github.com/thomblake/js3-mode.git
