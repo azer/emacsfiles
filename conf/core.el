@@ -50,6 +50,12 @@
 (add-hook 'before-save-hook 'delete-trailing-blank-lines)
 (setq-default show-trailing-whitespace t)
 
+;; set uniquify separator
+(require 'uniquify)
+(setq
+ uniquify-buffer-name-style 'post-forward
+   uniquify-separator ":")
+
 (defun delete-trailing-blank-lines ()
   "Deletes all blank lines at the end of the file."
   (interactive)

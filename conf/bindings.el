@@ -1,6 +1,8 @@
 (defvar my-keys-map (make-keymap) "my-keymap.")
 
 (define-key my-keys-map (kbd "M-r") 'replace-regexp)
+(define-key my-keys-map (kbd "M-g u") 'undo)
+(define-key my-keys-map (kbd "M-g r") 'redo)
 
 (define-minor-mode my-keys
   t " my-keys" 'my-keys-map)
