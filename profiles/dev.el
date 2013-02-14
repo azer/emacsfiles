@@ -25,4 +25,8 @@
 (load-conf-file "idomenu.el")
 (load-conf-file "jade-mode.el")
 (load-conf-file "node.el")
+
+(load-conf-file "w3m.el")
+(load-conf-file "bookmarks.el")
+
 ;;(load-conf-file "flymake.el")
