@@ -29,4 +29,6 @@
 (load-conf-file "w3m.el")
 (load-conf-file "bookmarks.el")
 
+(load-conf-file "zencoding.el")
+
 ;;(load-conf-file "flymake.el")
